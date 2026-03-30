@@ -1,0 +1,70 @@
+/* program to input display and print a matrix.
+
+  flow of the code:
+
+1. define a header file as per requirement.
+2. define the main function.
+3. define a array size based on requirement.
+4. define a variable based on requirement.
+5. used printf function to print the array elemnt.
+6. used scanf function to get input from the user.
+7. used for loop to get all aray element input from the user for the arra 1 .
+8. used for loop to get all aray element input from the user for the arra 2 .
+9. logical part :
+
+       used printf function to print the array element on screen.
+       used for loop to display the array 1 & 2 all element in matrix format  on screen .
+       used return function .
+
+*/
+
+#include <stdio.h>
+
+
+int main() {
+
+
+    int rows = 2;
+    int cols = 2;
+    int array1[2][2];
+    int array2[2][2];
+
+
+    int i, j;
+
+    printf("Enter elements for Array 1 (2x2):\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("Array1[%d][%d]: ", i, j);
+            scanf("%d", &array1[i][j]);
+        }
+    }
+
+  
+    printf("\nEnter elements for Array 2 (2x2):\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("Array2[%d][%d]: ", i, j);
+            scanf("%d", &array2[i][j]);
+        }
+    }
+
+
+    printf("\nMatrix 1:\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("%d\t", array1[i][j]); 
+        }
+        printf("\n"); 
+    }
+
+    printf("\nMatrix 2:\n");
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            printf("%d\t", array2[i][j]);
+        }
+        printf("\n"); 
+    }
+
+    return 0;
+}
