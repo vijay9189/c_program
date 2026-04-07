@@ -1,0 +1,42 @@
+/*  print the size of pointer varaible and size of the values derefrencxe by them.
+
+  flow of the code:
+ 
+ 1. define the header file as per requirement .
+ 2. define the main function with arguments if required.
+ 3. define the varaible as per requirement also assign the value also.
+ 4. defien the pointer and assign the values also.
+ 5. used printf function and print the size of the pointer requirement.
+ 6. . used printf function and print the size of the varaible requirement.
+ 7. used return function.
+ 
+ */
+ 
+ #include<stdio.h>
+ int main(void){
+     
+     char a='x', *p1=&a;
+     int b=5, *p2=&b;
+     float c = 5.5, *p3=&c;
+     double d=6.6, *p4=&d;
+     
+     printf("sizeof (p1) = %u\n, sizeof (*p1) = %u\n", sizeof(p1),sizeof(*p1));
+       printf("sizeof (p2) = %u\n, sizeof (*p2) = %u\n", sizeof(p2),sizeof(*p2));
+         printf("sizeof (p3) = %u\n, sizeof (*p3) = %u\n", sizeof(p3),sizeof(*p3));
+           printf("sizeof (p4) = %u\n, sizeof (*p4) = %u\n", sizeof(p4),sizeof(*p4));
+           
+           return 0;
+     
+     
+ }
+
+// output of the code is :
+
+sizeof (p1) = 8
+, sizeof (*p1) = 1
+sizeof (p2) = 8
+, sizeof (*p2) = 4
+sizeof (p3) = 8
+, sizeof (*p3) = 4
+sizeof (p4) = 8
+, sizeof (*p4) = 8
