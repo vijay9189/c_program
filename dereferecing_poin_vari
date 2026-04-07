@@ -1,0 +1,39 @@
+/* derefrencing pointer varaible.
+
+flow of the code is:
+
+1. define the header file as per requirement.
+2. define the main function with void.
+3. define the varaible as per requirement and if required assign the value also as per requirement.
+4. define the pointer varable as per requiremnt for assigning the pointer addres purpse.
+5. used printf function and print the values if varaible also print the addres of the vraible.
+6. used printf function and print the ardress of the pointer varable .
+7. used return function.
+
+*/
+
+#include<stdio.h>
+int main(void){
+    int a=5;
+    float b=5.5;
+    int *p1=&a;
+    float *p2=&b;
+    
+    printf("value of p1 =  addres of a = %p\n",p1);
+    printf("value of p2 = adress of b = %p\n",p2);
+    printf("address of p1 = %p\n",&p1);
+    printf("address of p2 = %p\n",&p2);
+    printf("values of a =%d %d %d \n ", a,*p1,*(&a));
+    printf("values of b = %.1f %.1f %.1f\n", b,*p2,*(&b));
+    return 0;
+    
+}
+
+
+// output of this program si:
+value of p1 =  addres of a = 0x7ffd2bf1f7dc
+value of p2 = adress of b = 0x7ffd2bf1f7d8
+address of p1 = 0x7ffd2bf1f7d0
+address of p2 = 0x7ffd2bf1f7c8
+values of a =5 5 5 
+ values of b = 5.5 5.5 5.5
